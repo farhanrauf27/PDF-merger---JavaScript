@@ -52,11 +52,13 @@
           <!-- File -->
           <div class="container my-3">
             <h1>PdfX - Your favorite merger tool</h1>
+            <form action="/merge" method="post" enctype="multipart/form-data">
         <div class="mb-3">
             <label for="formFile" class="form-label">Select PDF files for merge</label>
-            <input class="form-control" type="file" id="formFile" multiple accept=".pdf">
+            <input class="form-control" name="pdfs" type="file" id="formFile" multiple accept=".pdf">
             <input class="btn btn-primary my-4" type="submit" value="Submit">
           </div>
+        </form>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
